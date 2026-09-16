@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronn Granz | Software Developer & Web Engineer</title>
+  <meta name="description" content="Personal portfolio of Ronn Granz, a Software Developer & Fullstack Web Engineer passionate about EdTech, AI, and modern web applications.">
+  <meta name="keywords" content="Ronn Granz, Software Developer, Web Engineer, React, Next.js, TypeScript, Python, Kelana">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #f59e0b 0%, #ec4899 50%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .grid-bg {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen grid-bg selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-extrabold text-lg tracking-tight">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center text-slate-950 font-black shadow-md shadow-amber-500/20">
+          R
+        </span>
+        <span>ronn<span class="text-amber-400">.dev</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-amber-400 transition-colors">Tech Stack</a>
+        <a href="#projects" class="hover:text-amber-400 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/ronngranz-droid" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition">
+          <i data-lucide="github" class="w-5 h-5"></i>
+        </a>
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition shadow-md shadow-amber-500/20">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-16 sm:pt-24 pb-20">
+    <section id="about" class="grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span>Available for New Projects & Collaborations</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
+          Hi, I'm <span class="gradient-text">Ronn Granz</span>.
+          <br>
+          <span class="text-slate-200 text-3xl sm:text-4xl lg:text-5xl font-bold">Software Developer & Web Engineer.</span>
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl">
+          Passionate full-stack web developer dedicated to building responsive, gamified, and AI-powered web applications. Creator of <strong class="text-slate-200">Kelana</strong>, an open-source educational platform.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-extrabold text-sm hover:from-amber-400 hover:to-orange-400 transition shadow-lg shadow-amber-500/25 flex items-center gap-2">
+            <span>Explore Projects</span>
+            <i data-lucide="folder-code" class="w-4 h-4"></i>
+          </a>
+          <a href="https://github.com/ronngranz-droid/Kelana" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-bold text-sm hover:bg-slate-800 hover:border-slate-700 transition flex items-center gap-2">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Card Profile -->
+      <div class="lg:col-span-5">
+        <div class="glass-card p-6 sm:p-8 rounded-3xl relative overflow-hidden shadow-2xl">
+          <div class="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-amber-500 via-orange-500 to-pink-500 p-0.5 shadow-lg shadow-orange-500/20">
+              <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center font-black text-2xl text-amber-400">
+                RG
+              </div>
+            </div>
+            <div>
+              <h2 class="text-lg font-bold text-white">Ronn Granz</h2>
+              <p class="text-xs text-amber-400 font-mono">@ronngranz-droid</p>
+              <p class="text-xs text-slate-400 mt-0.5">Indonesia 🇮🇩 • Fullstack Dev</p>
+            </div>
+          </div>
+
+          <div class="space-y-3 font-mono text-xs bg-slate-950/60 p-4 rounded-xl border border-slate-800">
+            <div class="flex items-center justify-between text-slate-400">
+              <span>Primary Focus:</span>
+              <span class="text-amber-400 font-semibold">Web Apps & EdTech</span>
+            </div>
+            <div class="flex items-center justify-between text-slate-400">
+              <span>Frontend:</span>
+              <span class="text-emerald-400">Next.js / React / TS</span>
+            </div>
+            <div class="flex items-center justify-between text-slate-400">
+              <span>Backend & Cloud:</span>
+              <span class="text-blue-400">Node.js / Python / Vercel</span>
+            </div>
+            <div class="flex items-center justify-between text-slate-400">
+              <span>Status:</span>
+              <span class="text-purple-400">Building Cool Open Source</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="pt-24">
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <h2 class="text-xs uppercase font-bold tracking-widest text-amber-400 font-mono">Core Competencies</h2>
+        <p class="text-3xl font-extrabold text-white">Technologies & Tools</p>
+        <p class="text-sm text-slate-400">The modern software engineering stack I use to build fast, scalable web applications.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <!-- Tech Item -->
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2.5 hover:border-amber-500/50 hover:scale-105 transition duration-200">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 font-black">
+            <i data-lucide="code-2" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-slate-200">TypeScript</span>
+          <span class="text-[10px] text-slate-400 font-mono">Strong Typing</span>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2.5 hover:border-cyan-500/50 hover:scale-105 transition duration-200">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-black">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-slate-200">React.js</span>
+          <span class="text-[10px] text-slate-400 font-mono">UI Components</span>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2.5 hover:border-slate-500/50 hover:scale-105 transition duration-200">
+          <div class="w-10 h-10 rounded-xl bg-slate-500/10 flex items-center justify-center text-white font-black">
+            <i data-lucide="zap" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-slate-200">Next.js 14/15</span>
+          <span class="text-[10px] text-slate-400 font-mono">App Router / SSR</span>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2.5 hover:border-sky-500/50 hover:scale-105 transition duration-200">
+          <div class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 font-black">
+            <i data-lucide="palette" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-slate-200">Tailwind CSS</span>
+          <span class="text-[10px] text-slate-400 font-mono">Modern Design</span>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2.5 hover:border-yellow-500/50 hover:scale-105 transition duration-200">
+          <div class="w-10 h-10 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 font-black">
+            <i data-lucide="terminal" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-slate-200">Python</span>
+          <span class="text-[10px] text-slate-400 font-mono">Automation & AI</span>
+        </div>
+
+        <div class="glass-card p-4 rounded-2xl flex flex-col items-center justify-center text-center gap-2.5 hover:border-emerald-500/50 hover:scale-105 transition duration-200">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-black">
+            <i data-lucide="server" class="w-5 h-5"></i>
+          </div>
+          <span class="text-xs font-bold text-slate-200">Node.js</span>
+          <span class="text-[10px] text-slate-400 font-mono">APIs & Backend</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="pt-24">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <h2 class="text-xs uppercase font-bold tracking-widest text-amber-400 font-mono">Featured Works</h2>
+          <p class="text-3xl font-extrabold text-white">Software & Web Applications</p>
+        </div>
+        <a href="https://github.com/ronngranz-droid" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-400 hover:text-amber-400 transition">
+          <span>View all on GitHub</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Main Project: Kelana -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between border-amber-500/30 relative overflow-hidden group hover:border-amber-500/60 transition duration-300">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-[11px] font-bold border border-amber-500/30">
+                ⭐ Flagship Project
+              </span>
+              <span class="text-xs font-mono text-slate-400">Next.js • React • TS</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white group-hover:text-amber-400 transition">Kelana — Interactive Language Learning</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              An open-source, gamified educational web platform featuring 18+ comprehensive language courses, dual Romanization & native script keyboards, 50+ modular avatar customization, spaced-repetition SRS cram mode, and real-time interactive quiz engines.
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 text-[10px] font-mono border border-slate-800">Next.js 15</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 text-[10px] font-mono border border-slate-800">TypeScript</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 text-[10px] font-mono border border-slate-800">Tailwind CSS</span>
+              <span class="px-2.5 py-1 rounded-md bg-slate-900 text-slate-300 text-[10px] font-mono border border-slate-800">Vitest</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-6 mt-6 border-t border-slate-800/80">
+            <a href="https://belajarsamakelana.vercel.app" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition flex items-center gap-2">
+              <span>Live Website</span>
+              <i data-lucide="globe" class="w-4 h-4"></i>
+            </a>
+            <a href="https://github.com/ronngranz-droid/Kelana" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-slate-900 text-slate-200 border border-slate-800 font-bold text-xs hover:bg-slate-800 transition flex items-center gap-2">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>GitHub Repo</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Secondary Project: DanewAI & Tools -->
+        <div class="space-y-6">
+          <div class="glass-card rounded-3xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-lg font-bold text-white">DanewAI — AI Assistant Engine</h4>
+                <span class="text-[10px] font-mono text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded border border-purple-500/20">AI / LLM</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Smart conversational AI assistant designed for intelligent study companion workflows, instant explanations, and interactive tutor support.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-4 text-xs font-semibold text-slate-400">
+              <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i>
+              <span>TypeScript • AI Providers API</span>
+            </div>
+          </div>
+
+          <div class="glass-card rounded-3xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="text-lg font-bold text-white">Telegram Kelana Cloud Bot</h4>
+                <span class="text-[10px] font-mono text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded border border-blue-500/20">Bot / Automation</span>
+              </div>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Cloud-integrated notification bot for daily streak reminders, vocabulary flashcards, and student progress alerts.
+              </p>
+            </div>
+            <div class="flex items-center gap-2 pt-4 text-xs font-semibold text-slate-400">
+              <i data-lucide="send" class="w-4 h-4 text-blue-400"></i>
+              <span>Python • Telegram Bot API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="pt-24">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-amber-500/5 to-transparent pointer-events-none"></div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Let's Connect & Build Together</h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-lg mx-auto mb-8">
+          Interested in working together or discussing software engineering projects? Feel free to reach out directly.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="mailto:ronngranz@gmail.com" class="px-6 py-3 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs hover:bg-amber-400 transition shadow-lg shadow-amber-500/20 flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>ronngranz@gmail.com</span>
+          </a>
+          <a href="https://github.com/ronngranz-droid" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-bold text-xs hover:bg-slate-800 transition flex items-center gap-2">
+            <i data-lucide="github" class="w-4 h-4"></i>
+            <span>github.com/ronngranz-droid</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 bg-slate-950/80 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Ronn Granz. Built with HTML5, Tailwind CSS, & TypeScript.</p>
+      <p class="font-mono text-[11px] text-slate-600">Software Developer Portfolio • <a href="https://github.com/ronngranz-droid" class="hover:text-amber-400">@ronngranz-droid</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
